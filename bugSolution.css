@@ -1,0 +1,16 @@
+/* bugSolution.css */
+
+/* Instead of directly applying blur to the fixed element... */
+/*.fixed-element { position: fixed; filter: blur(5px); }*/
+
+/* ...wrap it in a container and apply the blur to the container. */
+.container {
+  position: relative;
+  z-index: 1; /* Adjust as needed */
+  filter: blur(5px);
+}
+
+.fixed-element {
+  position: fixed;
+  z-index: 2; /* Adjust as needed */
+}
